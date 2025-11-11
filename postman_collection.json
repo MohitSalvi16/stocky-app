@@ -1,0 +1,109 @@
+{
+    "info": {
+        "name": "Stocky APIs",
+        "_postman_id": "a12b3c45-d678-90ef-gh12-3456ijk789lm",
+        "description": "Postman collection for Stocky Assignment APIs",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Add Reward",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"user_id\": 1,\n    \"stock\": \"RELIANCE\",\n    \"shares\": 2.5\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/reward",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "reward"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Today Stocks",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/today-stocks/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "today-stocks",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Stats",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/stats/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "stats",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Historical INR",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/historical-inr/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "historical-inr",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Portfolio",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/portfolio/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "portfolio",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}
