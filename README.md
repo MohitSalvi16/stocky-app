@@ -1,4 +1,4 @@
-# 🏦 Stocky App — Golang Backend
+# Stocky App — Golang Backend
 
 ---
 
@@ -272,5 +272,4 @@ CREATE TABLE ledger (
 );
 ```
 
-**End of README**
 
